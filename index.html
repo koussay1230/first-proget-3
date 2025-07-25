@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📚 مكتبة المنطق والرياضيات</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      direction: rtl;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .book {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .book:hover {
+      transform: translateY(-5px);
+    }
+
+    .book img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .book-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #34495e;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3498db;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #1abc9c;
+    }
+
+    .buttons a.download {
+      background-color: #e67e22;
+    }
+
+    .buttons a.download:hover {
+      background-color: #d35400;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 كتيبات في المنطق والرياضيات</h1>
+
+  <div class="books">
+    <div class="book">
+      <img src="images/pdf-icon.png" alt="PDF Icon">
+      <div class="book-title">كتيب المنطق الأساسي</div>
+      <div class="buttons">
+        <a href="pdfs/logic1.pdf" target="_blank">افتح</a>
+        <a href="pdfs/logic1.pdf" download class="download">حمّل</a>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="images/pdf-icon.png" alt="PDF Icon">
+      <div class="book-title">كتيب الجبر البسيط</div>
+      <div class="buttons">
+        <a href="pdfs/algebra1.pdf" target="_blank">افتح</a>
+        <a href="pdfs/algebra1.pdf" download class="download">حمّل</a>
+      </div>
+    </div>
+
+    <div class="book">
+      <img src="images/pdf-icon.png" alt="PDF Icon">
+      <div class="book-title">كتيب أساسيات الاحتمالات</div>
+      <div class="buttons">
+        <a href="pdfs/probability.pdf" target="_blank">افتح</a>
+        <a href="pdfs/probability.pdf" download class="download">حمّل</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
